@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muslim Insurance California | Halal Insurance Solutions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Raleway', sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #0c1e35;
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            z-index: 100;
+            top: 0;
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-family: 'Playfair Display', serif;
+            color: #d4af37;
+            font-size: 28px;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 30px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #d4af37;
+        }
+        
+        .cta-button {
+            background-color: #d4af37;
+            color: #0c1e35;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        .cta-button:hover {
+            background-color: #c9a22e;
+        }
+        
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background-color: #0c1e35;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-top: 70px;
+        }
+        
+        .hero-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        }
+        
+        .hero-image {
+            width: 48%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .hero-text {
+            width: 48%;
+            color: #fff;
+            padding-right: 20px;
+        }
+        
+        .hero-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 50px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .hero-subheading {
+            font-size: 20px;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+        
+        .hero-cta {
+            display: inline-block;
+            background-color: #d4af37;
+            color: #0c1e35;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        
+        .hero-cta:hover {
+            background-color: #c9a22e;
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: #f7f7f7;
+        }
+        
+        .section-heading {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #0c1e35;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: #fff;
+            border-radius:
+            8px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+        }
+        
+        .service-title {
+            font-size: 22px;
+            margin-bottom: 15px;
+            color: #0c1e35;
+        }
+        
+        .service-description {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        
+        /* Contact Form */
+        .contact {
+            padding: 80px 0;
+            background-color: #fff;
+        }
+        
+        .form-container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #f7f7f7;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+        
+        .form-group {
+            margin-bottom: 25px;
+        }
+        
+        .form-label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: 600;
+            color: #0c1e35;
+        }
+        
+        .form-input,
+        .form-textarea {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Raleway', sans-serif;
+            font-size: 16px;
+        }
+        
+        .form-input:focus,
+        .form-textarea:focus {
+            outline: none;
+            border-color: #d4af37;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.2);
+        }
+        
+        .form-textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        .form-button {
+            background-color: #d4af37;
+            color: #0c1e35;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            font-weight: 600;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        .form-button:hover {
+            background-color: #c9a22e;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #0c1e35;
+            color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-text {
+            margin-bottom: 15px;
+        }
+        
+        .footer-links a {
+            color: #d4af37;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 15px;
+            }
+            
+            .hero-content {
+                flex-direction: column-reverse;
+            }
+            
+            .hero-image,
+            .hero-text {
+                width: 100%;
+            }
+            
+            .hero-image {
+                margin-bottom: 30px;
+            }
+            
+            .hero-heading {
+                font-size: 36px;
+            }
+            
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .cta-button {
+                display: block;
+                margin-top: 20px;
+            }
+            
+            nav ul {
+                flex-direction: column;
+            }
+            
+            nav ul li {
+                margin: 10px 0;
+            }
+            
+            .hero-heading {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="#" class="logo">Muslim Insurance California</a>
+            <nav>
+                <ul>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact" class="cta-button">Free Consultation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">IT'S PERSONAL</h1>
+                <p class="hero-subheading">
+                    Our mission is to provide more than just insurance coverage; we aim to offer security, peace of mind, and financial protection that aligns with your values and faith.
+                </p>
+                <a href="#contact" class="hero-cta">BOOK A FREE CONSULTATION</a>
+            </div>
+            <img src="/api/placeholder/600/400" alt="Muslim couple discussing insurance options" class="hero-image">
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <h2 class="section-heading">Our Insurance Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3 class="service-title">Medicare Solutions</h3>
+                    <p class="service-description">Specialized Medicare plans tailored to meet your healthcare needs while respecting your religious values and preferences.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">Life Insurance</h3>
+                    <p class="service-description">Halal life insurance options that provide financial security for your loved ones in accordance with Islamic principles.</p>
+                </div>
+                <div class="service-card">
+                    <h3 class="service-title">Health Insurance</h3>
+                    <p class="service-description">Comprehensive health coverage solutions that respect your faith while protecting you and your family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="contact" id="about">
+        <div class="container">
+            <h2 class="section-heading">About Us</h2>
+            <div class="form-container" style="text-align: center;">
+                <p style="margin-bottom: 20px;">As a dedicated Muslim insurance agent in California, I understand the unique needs of our community when it comes to finding insurance that aligns with our values and principles.</p>
+                <p style="margin-bottom: 20px;">I specialize in providing halal insurance solutions that offer the protection you need while respecting your faith, with a focus on Medicare, health, and life insurance options for Muslims throughout California.</p>
+                <a href="#contact" class="hero-cta" style="margin-top: 20px;">Contact Me Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 class="section-heading">Book A Free Consultation</h2>
+            <div class="form-container">
+                <form id="consultation-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Name</label>
+                        <input type="text" id="name" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" id="phone" class="form-input" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">How can I help you?</label>
+                        <textarea id="message" class="form-textarea" required></textarea>
+                    </div>
+                    <button type="submit" class="form-button">BOOK NOW</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p class="footer-text">© 2025 Muslim Insurance California. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('consultation-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your submission! We will contact you shortly to confirm your free consultation.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
